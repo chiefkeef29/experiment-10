@@ -1,35 +1,80 @@
-Aim : study of panda
+Here’s the same content without highlights or formatting emphasis:
 
-theory: 
+---
 
-Pandas is an essential, open-source Python library for data analysis and manipulation.
+Aim
+To study the basics of the Pandas library in Python by creating and manipulating Series and DataFrames, and performing fundamental data operations.
 
-pd.Series(): Creates a one-dimensional labeled array capable of holding any data type.
+---
 
-pd.DataFrame(): Creates a two-dimensional, size-mutable, and tabular data structure with labeled axes.
+Theory
+Pandas is a powerful Python library used for data manipulation and analysis. It provides two primary data structures.
 
-df.shape: An attribute that returns a tuple representing the dimensionality of the DataFrame.
+Series is a one-dimensional labeled array capable of holding any data type.
+DataFrame is a two-dimensional labeled data structure like a table with rows and columns.
 
-df.ndim: Returns an integer representing the number of axes/dimensions.
+In this experiment, a Series is created to store numerical data. A DataFrame is created using a dictionary. Various attributes and methods are used to explore the structure of the data. Data is accessed, modified, and analyzed using indexing and built-in functions.
 
-df.columns: Returns the column labels of the DataFrame.
+Pandas simplifies tasks like data cleaning, transformation, and analysis, making it widely used in data science.
 
-df.dtypes: Returns the data types of each column.
+---
 
-df.loc[row_index, "ColumnName"]: Accesses a group of rows and columns by labels or a boolean array.
+Functions / Methods Used
 
-df.iloc[row_index, col_index]: Accesses a group of rows and columns by integer-based positions.
+pd.Series()
+Creates a one-dimensional labeled array.
+Example: pd.Series([1,3,5,6,8])
 
-df.drop(): Removes specified rows or columns. In the notebook, axis=1 is used to specify a column removal.
+pd.DataFrame()
+Creates a table-like structure from a dictionary or other data.
+Example: pd.DataFrame(data)
 
-df.mean(): Calculates the average of the values in a column.
+df.shape
+Returns the number of rows and columns.
 
-df.max(): Returns the highest value in a column.
+df.ndim
+Returns the number of dimensions.
 
-df.min(): Returns the lowest value in a column.
+df.size
+Returns total number of elements in the DataFrame.
 
-df[df["Marks"] > 80]: It filters the DataFrame to show only the rows where the condition (Marks greater than 80) is true.
+df.columns
+Displays column names.
 
-Conclusion:
+df.dtypes
+Shows the data type of each column.
 
-Hence pandas library were implented in python and operations were done using them.
+df["column_name"]
+Accesses a specific column.
+
+df.loc[]
+Accesses data using labels.
+
+df.iloc[]
+Accesses data using index positions.
+
+Column Assignment
+Used to add a new column.
+Example: df["Grade"] = [...]
+
+Updating Values
+Used to modify existing data using loc or iloc.
+
+df.drop()
+Removes a column or row.
+
+max()
+Finds maximum value in a column.
+
+min()
+Finds minimum value in a column.
+
+---
+
+Conclusion
+This experiment demonstrates how Pandas can be used to efficiently create, access, and manipulate structured data. It highlights the importance of DataFrames in handling tabular data and shows how built-in functions simplify data analysis tasks.
+
+---
+
+
+
